@@ -57,7 +57,11 @@ export class D3Component implements OnChanges {
       this._logService.dateChange(event.start, event.end).subscribe(data => {
         if (this.barData.dates != data) {
           this.barData.dates = data;
-          this.render = true;
+          if(data.dates.length==0){
+            this.render= false
+          }else{
+            this.render = true;
+          }
         }
       });
     }
