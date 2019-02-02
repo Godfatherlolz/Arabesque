@@ -24,7 +24,6 @@ export class LogService {
       this.allCountriess().subscribe(countries => {
         this.allCountries = countries
       })
-      console.log(data)
       this.preferance()
     })
 

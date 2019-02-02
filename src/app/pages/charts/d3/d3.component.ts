@@ -49,7 +49,6 @@ export class D3Component implements OnChanges {
 
   }
   ngOnChanges(changes: SimpleChanges): void {
-    /*console.log(changes.barData.currentValue)*/
   }
   getRangeDate(event) {
     this.render = false;

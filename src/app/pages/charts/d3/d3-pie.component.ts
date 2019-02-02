@@ -13,7 +13,6 @@ import { NbThemeService } from '@nebular/theme';
   `,
 })
 export class D3PieComponent implements OnDestroy, OnInit {
-  //results :any = [];
   d :any;
   results = [
   ];

@@ -53,21 +53,11 @@ export class CountryOrdersComponent implements OnDestroy {
   }
 
   selectCountryById(data) {
-    console.log(data);
     this.countryName = data.countryName;
-    /* console.log(countryName)
-     console.log(this._logService.sectorspercountry(countryName))
-     console.log(this.countryData)*/
-    //this.CountrySectors = this._logService.sectorspercountry(data.countryID);
-    //this.countryData = this._logService.sectorspercountry(data.countryID).data;
-    //this.countriesCategories = this._logService.sectorspercountry(data.countryID).labels;
-    //let sectors = [];
-
     this._logService.sectorspercountry(data.countryID)
       .pipe(takeWhile(() => this.alive))
       .subscribe((countryData) => {
         this.countriesCategories = countryData;
-      //  console.log(this.countryData)
       });
   }
 

@@ -27,7 +27,7 @@ export class D3BarComponent implements OnDestroy {
   showXAxis = true;
   showYAxis = true;
   xAxisLabel = 'Country';
-  yAxisLabel = 'Population';
+  yAxisLabel = 'Sectors';
   colorScheme: any;
   themeSubscription: any;
 

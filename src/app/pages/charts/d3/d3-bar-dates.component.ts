@@ -23,7 +23,6 @@ export class D3BarDatesComponent implements OnChanges,  OnDestroy {
   ];
   private _barData: any;
   get barData(): any{
-    // transform value for display
     return this._barData;
   }
   @Input() set barData(value){
@@ -47,12 +46,7 @@ export class D3BarDatesComponent implements OnChanges,  OnDestroy {
       };
     });
   }
-  /*getRangeDate(event) {
-    if(event.start && event.end){
-      
-    }
-     }*/
-    
+ 
  ngOnChanges(changes: SimpleChanges): void {
    //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
    //Add '${implements OnChanges}' to the class.
@@ -61,7 +55,6 @@ export class D3BarDatesComponent implements OnChanges,  OnDestroy {
 
 ngOnInit(): void {
   this.results = this._barData;
-  console.log(this._barData)
   
 }
   ngOnDestroy(): void {

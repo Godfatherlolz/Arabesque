@@ -29,7 +29,7 @@ export class D3LineComponent implements OnDestroy {
   showXAxisLabel = true;
   xAxisLabel = 'Country';
   showYAxisLabel = true;
-  yAxisLabel = 'Population';
+  yAxisLabel = 'Sectors';
   colorScheme: any;
   themeSubscription: any;
 

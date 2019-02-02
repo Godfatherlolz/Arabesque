@@ -50,7 +50,6 @@ export class CountryOrdersMapComponent implements OnDestroy {
       .subscribe(([cords, config]: [any, any]) => {
         this.currentTheme = config.variables.countryOrders;
         this.layers = [this.createGeoJsonLayer(cords)];
-        console.log(this.countryId)
         this.selectFeature(this.findFeatureLayerByCountryId(this.countryId));
       });
   }
