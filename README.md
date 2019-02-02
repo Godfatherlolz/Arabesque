@@ -42,8 +42,7 @@ If there is a version mismatch you could either fix it by updating the local ang
     │   ├───map
     │   └───skins
     └───environments
-
-
+ 
 ## @Core and @Theme
 
 @Theme is where the basic Template (Ngx-Admin) Components are. @Core is where the Core Module is. It's Basically the main Provider of data for the Charts.
