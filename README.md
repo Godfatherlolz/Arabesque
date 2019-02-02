@@ -6,7 +6,7 @@ This is a Task for Arabesque to install Clone this then:
 If there is a version mismatch you could either fix it by updating the local angular version. Or to Ignore this warning and always use the Local Angular version over the Global one.
 # Files
 
-./.
+./.  
 ├───.github  
 ├───.vscode  
 ├───e2e  
