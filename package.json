@@ -1,13 +1,13 @@
 {
-  "name": "ngx-admin",
+  "name": "arabesque",
   "version": "3.1.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akveo/ngx-admin.git"
+    "url": "git+https://github.com/Godfatherlolz/Arabesque"
   },
   "bugs": {
-    "url": "https://github.com/akveo/ngx-admin/issues"
+    "url": "https://github.com/Godfatherlolz/Arabesque/issues"
   },
   "browserslist": [
     "> 1%",
