@@ -20,14 +20,16 @@ import { NbThemeService } from '@nebular/theme';
 export class D3LineComponent implements OnDestroy {
 
   multi = [];
- 
+  @Input() set countries_preferances(value){
+    this.multi = value;
+  }
   showLegend = true;
   showXAxis = true;
   showYAxis = true;
   showXAxisLabel = true;
   xAxisLabel = 'Country';
   showYAxisLabel = true;
-  yAxisLabel = 'Sectors';
+  yAxisLabel = 'Population';
   colorScheme: any;
   themeSubscription: any;
 

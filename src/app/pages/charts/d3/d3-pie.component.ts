@@ -13,10 +13,17 @@ import { NbThemeService } from '@nebular/theme';
   `,
 })
 export class D3PieComponent implements OnDestroy, OnInit {
- 
+  //results :any = [];
+  d :any;
   results = [
   ];
   @Input() set data(value){
+    if(value){
+        for (var key in value) {
+          if (value.hasOwnProperty(key)) {
+          this.results.push({name:key , value:value[key]})
+      }}
+    }
   }
   showLegend = true;
   showLabels = true;
@@ -32,10 +39,13 @@ export class D3PieComponent implements OnDestroy, OnInit {
       };
     });
 
+    console.log(this.theme);
   }
 ngOnInit(): void {
   //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
   //Add 'implements OnInit' to the class.
+
+
 }
   ngOnDestroy(): void {
     this.themeSubscription.unsubscribe();

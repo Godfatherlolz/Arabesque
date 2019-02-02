@@ -13,6 +13,9 @@ import { NbThemeService } from '@nebular/theme';
 export class D3AdvancedPieComponent implements OnDestroy {
 
   single = [];
+  @Input() set load_data(value){
+    this.single = value.data;
+  }
   colorScheme: any;
   themeSubscription: any;
 

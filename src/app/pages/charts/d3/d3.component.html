@@ -3,6 +3,7 @@
         <nb-card>
           <nb-card-header>Sectors Preferances (FILTER)</nb-card-header>
           <nb-card-body>
+            <ngx-d3-pie *ngIf="pieChartList != null"  [data]="pieChartList"></ngx-d3-pie>
           </nb-card-body>
         </nb-card>
       </div>
@@ -10,13 +11,24 @@
         <nb-card>
           <nb-card-header >Unique Loads Eeach Day </nb-card-header>
           <nb-card-body>
+            <div class="row">
+                <div class="col-lg-4">
+                    <nb-calendar-range  [range]="range" [min]="min" [max]="max" (rangeChange)="getRangeDate($event)"></nb-calendar-range>
+                </div>
+                <div class="col-lg-8 ">
+                    <ngx-d3-bar-dates *ngIf="render" [barData]="barData" ></ngx-d3-bar-dates>
+                    <h1 *ngIf="!render">No Data Currently.</h1>
+                </div>
+            </div>
+              
             </nb-card-body>
         </nb-card>
       </div>
   <div class="col-lg-4">
     <nb-card>
-      <nb-card-header>Load & Unique Loads for the date of xx-xx-xxxx (Randomly Selected)</nb-card-header>
+      <nb-card-header *ngIf="loadData && loadData.length != 0">Load & Unique Loads for the date of {{loadData.date}} (Randomly Selected)</nb-card-header>
       <nb-card-body>
+          <ngx-d3-advanced-pie *ngIf="loadData && loadData.length != 0 " [load_data]="loadData"></ngx-d3-advanced-pie>
       </nb-card-body>
     </nb-card>
   </div>
@@ -24,6 +36,7 @@
       <nb-card>
         <nb-card-header>Most Filtered Countries</nb-card-header>
         <nb-card-body>
+          <ngx-d3-bar *ngIf="barData.countries != null" [barData]="barData" ></ngx-d3-bar>
         </nb-card-body>
       </nb-card>
     </div>
@@ -32,6 +45,7 @@
     <nb-card>
       <nb-card-header>Countries Interest in Sector</nb-card-header>
       <nb-card-body>
+        <ngx-d3-line  *ngIf="countriesSectors.length != 0" [countries_preferances]="countriesSectors"></ngx-d3-line>
       </nb-card-body>
     </nb-card>
   </div>

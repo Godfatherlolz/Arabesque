@@ -13,9 +13,17 @@ import { NbThemeService } from '@nebular/theme';
   `,
 })
 export class D3PieCountrySectorComponent implements OnDestroy, OnInit {
+  d :any;
   results = [
   ];
   @Input() set data(value){
+    if(value){
+        for (var key in value) {
+          if (value.hasOwnProperty(key)) {
+          this.results.push({name:key , value:value[key]})
+      }} 
+    }
+   
   }
  
   showLegend = true;
@@ -33,6 +41,10 @@ export class D3PieCountrySectorComponent implements OnDestroy, OnInit {
     });
   }
 ngOnInit(): void {
+  //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+  //Add 'implements OnInit' to the class.
+
+
 }
   ngOnDestroy(): void {
     this.themeSubscription.unsubscribe();

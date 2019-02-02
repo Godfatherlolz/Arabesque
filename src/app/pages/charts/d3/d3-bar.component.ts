@@ -20,12 +20,14 @@ export class D3BarComponent implements OnDestroy {
   results = [
   
   ];
- 
+  @Input() set barData(value){
+    this.results = value.countries;
+  }
   showLegend = true;
   showXAxis = true;
   showYAxis = true;
   xAxisLabel = 'Country';
-  yAxisLabel = 'Sectors';
+  yAxisLabel = 'Population';
   colorScheme: any;
   themeSubscription: any;
 
