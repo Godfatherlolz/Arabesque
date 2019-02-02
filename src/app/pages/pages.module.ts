@@ -6,7 +6,6 @@ import { ThemeModule } from '../@theme/theme.module';
 import { NbCalendarRangeModule, NbSpinnerModule } from '@nebular/theme';
 
 
-
 const PAGES_COMPONENTS = [
   PagesComponent,
 ];
