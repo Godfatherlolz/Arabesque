@@ -6,44 +6,43 @@ This is a Task for Arabesque to install Clone this then:
 If there is a version mismatch you could either fix it by updating the local angular version. Or to Ignore this warning and always use the Local Angular version over the Global one.
 # Files
 
-./.
-├───.github
-├───.vscode
-├───e2e
-└───src
-    ├───app
-    │   ├───@core
-    │   │   ├───data
-    │   │   ├───mock
-    │   │   └───utils
-    │   ├───@theme
-    │   │   ├───components
-    │   │   │   ├───footer
-    │   │   │   ├───header
-    │   │   ├───directives
-    │   │   ├───layouts
-    │   │   ├───pipes
-    │   │   └───styles
-    │   ├───models
-    │   ├───pages
-    │   │   ├───charts
-    │   │   │   └───d3
-    │   │   ├───maps
-    │   │   │   └───country-orders
-    │   │   │       ├───chart
-    │   │   │       └───map
-    │   │   └───miscellaneous
-    │   │       └───not-found
-    │   └───services
-    ├───assets
-    │   ├───data
-    │   ├───images
-    │   ├───leaflet-countries
-    │   ├───map
-    │   └───skins
-    └───environments
-
-
+./.  
+├───.github  
+├───.vscode  
+├───e2e  
+└───src  
+    ├───app  
+    │   ├───@core  
+    │   │   ├───data  
+    │   │   ├───mock  
+    │   │   └───utils  
+    │   ├───@theme  
+    │   │   ├───components  
+    │   │   │   ├───footer  
+    │   │   │   ├───header  
+    │   │   ├───directives  
+    │   │   ├───layouts  
+    │   │   ├───pipes  
+    │   │   └───styles  
+    │   ├───models  
+    │   ├───pages  
+    │   │   ├───charts  
+    │   │   │   └───d3  
+    │   │   ├───maps  
+    │   │   │   └───country-orders  
+    │   │   │       ├───chart  
+    │   │   │       └───map  
+    │   │   └───miscellaneous  
+    │   │       └───not-found  
+    │   └───services  
+    ├───assets  
+    │   ├───data  
+    │   ├───images  
+    │   ├───leaflet-countries  
+    │   ├───map  
+    │   └───skins  
+    └───environments  
+ 
 ## @Core and @Theme
 
 @Theme is where the basic Template (Ngx-Admin) Components are. @Core is where the Core Module is. It's Basically the main Provider of data for the Charts.
