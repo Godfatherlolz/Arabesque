@@ -7,41 +7,41 @@ If there is a version mismatch you could either fix it by updating the local ang
 # Files
 
 ./.
-├───.github
-├───.vscode
-├───e2e
-└───src
-    ├───app
-    │   ├───@core
-    │   │   ├───data
-    │   │   ├───mock
-    │   │   └───utils
-    │   ├───@theme
-    │   │   ├───components
-    │   │   │   ├───footer
-    │   │   │   ├───header
-    │   │   ├───directives
-    │   │   ├───layouts
-    │   │   ├───pipes
-    │   │   └───styles
-    │   ├───models
-    │   ├───pages
-    │   │   ├───charts
-    │   │   │   └───d3
-    │   │   ├───maps
-    │   │   │   └───country-orders
-    │   │   │       ├───chart
-    │   │   │       └───map
-    │   │   └───miscellaneous
-    │   │       └───not-found
-    │   └───services
-    ├───assets
-    │   ├───data
-    │   ├───images
-    │   ├───leaflet-countries
-    │   ├───map
-    │   └───skins
-    └───environments
+├───.github  
+├───.vscode  
+├───e2e  
+└───src  
+    ├───app  
+    │   ├───@core  
+    │   │   ├───data  
+    │   │   ├───mock  
+    │   │   └───utils  
+    │   ├───@theme  
+    │   │   ├───components  
+    │   │   │   ├───footer  
+    │   │   │   ├───header  
+    │   │   ├───directives  
+    │   │   ├───layouts  
+    │   │   ├───pipes  
+    │   │   └───styles  
+    │   ├───models  
+    │   ├───pages  
+    │   │   ├───charts  
+    │   │   │   └───d3  
+    │   │   ├───maps  
+    │   │   │   └───country-orders  
+    │   │   │       ├───chart  
+    │   │   │       └───map  
+    │   │   └───miscellaneous  
+    │   │       └───not-found  
+    │   └───services  
+    ├───assets  
+    │   ├───data  
+    │   ├───images  
+    │   ├───leaflet-countries  
+    │   ├───map  
+    │   └───skins  
+    └───environments  
  
 ## @Core and @Theme
 
